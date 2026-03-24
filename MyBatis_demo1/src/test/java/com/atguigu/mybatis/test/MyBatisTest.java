@@ -25,14 +25,14 @@ public class MyBatisTest {
         SqlSessionFactory sqlSessionFactory = sqlSessionFactoryBuilder.build(is);
 
         //获取SqlSwsion
-        SqlSession sqlSession = sqlSessionFactory.openSession();
+        SqlSession sqlSession = sqlSessionFactory.openSession(true);
 
         //获取mapper接口对象
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
         //测试功能
        int result =  mapper.insertUser();
-       sqlSession.commit();
+//       sqlSession.commit();
 
         System.out.println("result: " + result);
     }
