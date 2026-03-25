@@ -15,4 +15,10 @@
     <delete id="deleteUser">
         delete from t_user where id = 5
     </delete>
+    <select id="getUserById" resultType="com.atguigu.mybatis.pojo.User">
+        select * from t_user where id = 3
+    </select>
+    <select id="getAllUser" resultType="com.atguigu.mybatis.pojo.User">
+        select * from t_user
+    </select>
 </mapper>

@@ -4,9 +4,17 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <!--设置连接数据库的环境-->
+    <!--
+      TRANSACTIONMANGER  type = "JDBC | MANAGED"
+      MANAGED : Spring
+    -->
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"/>
+            <!--
+            dataSource
+            type="POOLED|UNPOOLED|JNDI"
+            -->
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
                 <property name="url" value="jdbc:mysql://localhost:3306/MyBatis"/>
