@@ -34,4 +34,11 @@ public class SelectMapperTest {
         SelectMapper mapper = sqlSession.getMapper(SelectMapper.class);
         System.out.println(mapper.getUserByIdToMap(3));
     }
+
+    @Test
+    public void testgetAllUserToMap(){
+        SqlSession sqlSession = SqlSessionUtils.getSqlSession();
+        SelectMapper mapper = sqlSession.getMapper(SelectMapper.class);
+        System.out.println(mapper.getAllUserToMap());
+    }
 }
