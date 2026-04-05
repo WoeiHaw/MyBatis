@@ -20,7 +20,15 @@ public class ResultMapTest {
     public void testGetEmpAndDept(){
         SqlSession sqlSession = SqlSessionUtils.getSqlSession();
         EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
-        Emp emp = mapper.getEmpAndDept(1);
+        Emp emp = mapper.getEmpAndDept(3);
         System.out.println(emp);
-    };
+    }
+
+    @Test
+    public void testGetEmpAndDeptByStep(){
+        SqlSession sqlSession = SqlSessionUtils.getSqlSession();
+        EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
+        Emp emp = mapper.getEmpAndDeptByStepOne(3);
+        System.out.println(emp);
+    }
 }
