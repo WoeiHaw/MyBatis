@@ -14,7 +14,15 @@ public class DynamicSQLMapperTest {
     public void  testGetEmpByCondition(){
         SqlSession sqlSession = SqlSessionUtils.getSqlSession();
         DynamicSqlMapper mapper = sqlSession.getMapper(DynamicSqlMapper.class);
-        List<Emp> list = mapper.getEmpByCondition(new Emp(null,null,null,null,null));
+        List<Emp> list = mapper.getEmpByCondition(new Emp(null,"张三",23,null,null));
+        System.out.println(list);
+    }
+
+    @Test
+    public  void testGestEmpByChoose(){
+        SqlSession sqlSession = SqlSessionUtils.getSqlSession();
+        DynamicSqlMapper mapper = sqlSession.getMapper(DynamicSqlMapper.class);
+        List<Emp> list = mapper.getEmpByChoose(new Emp(null,"张三",23,"男","123@qq.com"));
         System.out.println(list);
     }
 }
