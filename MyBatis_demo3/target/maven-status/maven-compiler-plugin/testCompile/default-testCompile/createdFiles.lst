@@ -1,1 +1,3 @@
-ResultMapTest.class
+com/atguigu/mybatis/test/CacheMapperTest.class
+com/atguigu/mybatis/test/DynamicSQLMapperTest.class
+com/atguigu/mybatis/test/ResultMapTest.class

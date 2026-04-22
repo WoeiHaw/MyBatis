@@ -1,5 +1,7 @@
-com/atguigu/mybatis/mapper/EmpMapper.class
+com/atguigu/mybatis/mapper/DynamicSqlMapper.class
 com/atguigu/mybatis/mapper/DeptMapper.class
 com/atguigu/mybatis/utils/SqlSessionUtils.class
-com/atguigu/mybatis/pojo/Emp.class
 com/atguigu/mybatis/pojo/Dept.class
+com/atguigu/mybatis/mapper/EmpMapper.class
+com/atguigu/mybatis/pojo/Emp.class
+com/atguigu/mybatis/mapper/CacheMapper.class
